@@ -60,4 +60,4 @@ var ImportantNews = React.createClass({
 	},
 });
 
-module.exports = ImportantNews
+module.exports = ImportantNews;
