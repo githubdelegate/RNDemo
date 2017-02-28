@@ -14,10 +14,12 @@ import {
 } from 'react-native';
 
 var IndexView = require('./code/indexview');
+var Navi = require('./code/navigator/navigatorDemo')
 
 var app = React.createClass({
     render:function(){
-        return (<IndexView></IndexView>);
+        // return (<IndexView></IndexView>);
+        return (<Navi></Navi>);
     }
 });
 
