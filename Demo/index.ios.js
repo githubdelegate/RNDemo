@@ -14,6 +14,7 @@ import {
 } from 'react-native';
 
 var Header = require('./code/header')
+var List  = require('./code/newslist')
 
 var styles = StyleSheet.create({
    container: {
@@ -63,7 +64,14 @@ var app = React.createClass({
       return (
       <View>
       <Header></Header>
-      
+      <View >
+        <List title='宇航员在太空宣布 三体 获奖'></List>
+        <List title='宇航员在太空宣布 三体 获奖'></List>
+        <List title='宇航员在太空宣布 三体 获奖'></List>
+        <List title='宇航员在太空宣布 三体 获奖'></List>
+        <List title='宇航员在太空宣布 三体 获奖'></List>
+      </View>
+
       <View style={styles.container}>
         <View style={[styles.item,styles.center]}>
              <Text style={styles.font}>海外酒店</Text>
