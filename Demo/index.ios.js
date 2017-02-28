@@ -13,6 +13,7 @@ import {
   PixelRatio
 } from 'react-native';
 
+var Header = require('./code/header')
 
 var styles = StyleSheet.create({
    container: {
@@ -55,9 +56,14 @@ var styles = StyleSheet.create({
    }
 });
 
+
+
 var app = React.createClass({
    render: function(){
       return (
+      <View>
+      <Header></Header>
+      
       <View style={styles.container}>
         <View style={[styles.item,styles.center]}>
              <Text style={styles.font}>海外酒店</Text>
@@ -78,7 +84,11 @@ var app = React.createClass({
              <Text style={styles.font}>客栈</Text>
           </View>
         </View>
-      </View>);
+      </View>
+
+
+      </View>
+      );
    }
 });
 
