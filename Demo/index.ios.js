@@ -13,8 +13,10 @@ import {
   PixelRatio
 } from 'react-native';
 
-var Header = require('./code/header')
-var List  = require('./code/newslist')
+var Header = require('./code/header');
+var List  = require('./code/newslist');
+var ImportantNews = require('./code/importantNews');
+
 
 var styles = StyleSheet.create({
    container: {
@@ -71,7 +73,7 @@ var app = React.createClass({
         <List title='宇航员在太空宣布 三体 获奖'></List>
         <List title='宇航员在太空宣布 三体 获奖'></List>
       </View>
-
+      <ImportantNews news={['1.三体获奖啦，中国作家首次获奖,我们兴奋不已，哈哈哈哈哈哈哈哈哈','1.三体获奖啦，中国作家首次获奖','1.三体获奖啦，中国作家首次获奖','1.三体获奖啦，中国作家首次获奖']}></ImportantNews>
       <View style={styles.container}>
         <View style={[styles.item,styles.center]}>
              <Text style={styles.font}>海外酒店</Text>
