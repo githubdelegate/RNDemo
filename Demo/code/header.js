@@ -31,6 +31,7 @@ var styles = StyleSheet.create({
 });
 
 var Header = React.createClass({
+
 	render: function(){
 		return (
 				<View style={styles.flex}>
@@ -43,5 +44,4 @@ var Header = React.createClass({
 			);
 	}
 });
-
-module.exports = Header;
+module.exports=Header;

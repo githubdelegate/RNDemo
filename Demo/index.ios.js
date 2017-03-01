@@ -14,14 +14,16 @@ import {
 } from 'react-native';
 
 var IndexView = require('./code/indexview');
-var Navi = require('./code/navigator/navigatorDemo')
+var Navi = require('./code/navigator/navigatorDemo');
+var Search = require('./code/textinput/textinput');
+
 
 var app = React.createClass({
     render:function(){
         // return (<IndexView></IndexView>);
-        return (<Navi></Navi>);
+        // return (<Navi></Navi>);
+        return (<Search></Search>);
     }
 });
-
 
 AppRegistry.registerComponent('Demo',() => app);
